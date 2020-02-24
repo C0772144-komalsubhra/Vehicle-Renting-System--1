@@ -56,6 +56,13 @@ class MotorCycle: Vehicle {
         self.basePerKm = basePerKm
     
     }
+    func addDriver(driverId: Int, driverObj: Driver)
+       {
+           driver.updateValue(driverObj, forKey: driverId)
+       }
+    func removeDriver(driverId: Int, driverObj: Driver)
+    {
+        driver.removeValue(forKey: driverId)
+    }
     
-
 }
