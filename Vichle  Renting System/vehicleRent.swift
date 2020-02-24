@@ -46,6 +46,9 @@ init(vehicleRentId:Int,rentStartDate: String,rentEndDate: String ,kmDrived:Int)
         let numberOfDays = current.dateComponents([Calendar.Component.day], from: d1, to: d2)
         return numberOfDays.day!
     }
+        func display() {
+           
+    }
     }
 
     
