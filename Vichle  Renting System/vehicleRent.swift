@@ -48,7 +48,15 @@ init(vehicleRentId:Int,rentStartDate: String,rentEndDate: String ,kmDrived:Int)
     }
         func display() {
            
-    }
+                for i in vehicles
+                {
+                    i.value.display()
+                    totalBill = Float((i.value.baseRatePerDay * self.noOfDays)+(i.value.basePerKm * self.kmDrived))
+                    
+                   
+                    
+                }
+            }
     }
 
     
