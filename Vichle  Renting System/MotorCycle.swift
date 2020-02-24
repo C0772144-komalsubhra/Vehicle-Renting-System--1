@@ -11,6 +11,12 @@ class MotorCycle: Vehicle {
     
     var fuelType: typesOfFuel
     
+    var vehicleType: VehicleTypes
     
+    var vehicleIdentificationNumber: String
+    
+    var vehicleDiscription: String
+    
+  
 
 }
