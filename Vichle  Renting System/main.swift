@@ -33,4 +33,8 @@ do{
     let mc1=MotorCycle(vehicleIdentificationNumber :"MC001",vehicleDiscription :"2-seater comfortable",manufacturerName :"HONDA",vehicleType:.MOTORCYCLE,milage:42,maxTopSpeed:60,isSelfDrive : true,driverName:nil,isInsured:false,insauranceProviderName : nil,noOfSeats: 2,fuelType: .PETROL,baseRatePerDay:10,basePerKm:2)
    
   
-  
+    ca1.addDriver(driverId: d1.id, driverObj: d1)
+    b2.addDriver(driverId: d2.id,driverObj: d2)
+    
+    
+}
