@@ -63,42 +63,6 @@ class Bus: Vehicle {
           {
               driver.updateValue(driverObj, forKey: driverId)
           }
-       func removeDriver(driverId: Int, driverObj: Driver)
-       {
-           driver.removeValue(forKey: driverId)
-       }
-          
-    
-    func display() {
-        
-        print("_____________Bus Details________________")
-        print("Vehicle Identification Number : \(self.vehicleIdentificationNumber)")
-        print("Vehicle Disctription : \(self.vehicleDiscription)")
       
-        print("Manufacturer Name :\(self.manufacturerName) ")
-        print("Is Self Drive :\(self.isSelfDrive)")
-        print("Driver Name :\(self.driverName ?? "It is self Drive") ")
-        print("Is Insured :\(self.isInsured)")
-        print("Insaurance Provider Name :\(String(describing: self.insauranceProviderName))")
-        print("No Of Seats :\(self.noOfSeats)")
-        print("Fuel Type :\(self.fuelType)")
-        print("Base Rate Per Day :\(self.baseRatePerDay.currency())")
-        print("Base Per KM :\(self.basePerKm.currency())" )
-        print("Is Accesibility Service Available :\(self.isAccessibilityServiceAvailable)")
-        print("Is Wifi Available :\(self.isWifiAvailable)")
-        if driver.count==0{
-            print("*******************************************************")
-                  print("IT IS SELF DRIVE**NO DRIVER")
-            print("*******************************************************")
-              }
-              else{
-            print("*******************************************************")
-              for i in driver{
-                  i.value.display()
-                  }
-            print("*******************************************************")
-        }
-    }
-    
 
 }
