@@ -37,7 +37,25 @@ class MotorCycle: Vehicle {
     var maxTopSpeed: Int
      var driver = [Int: Driver]()
     
+    init(vehicleIdentificationNumber :String,vehicleDiscription :String,manufacturerName :String,vehicleType:VehicleTypes,milage:Int,maxTopSpeed:Int,isSelfDrive : Bool,driverName:String?,isInsured:Bool,insauranceProviderName : String?,noOfSeats: Int,fuelType: typesOfFuel,baseRatePerDay:Int,basePerKm:Int)
+    {
+        self.vehicleIdentificationNumber = vehicleIdentificationNumber
+        self.vehicleDiscription = vehicleDiscription
    
+        self.vehicleType = vehicleType
+        self.milage = milage
+        self.maxTopSpeed = maxTopSpeed
+        self.manufacturerName = manufacturerName
+        self.isSelfDrive = isSelfDrive
+        self.driverName = driverName
+        self.isInsured = isInsured
+        self.insauranceProviderName = insauranceProviderName
+        self.noOfSeats = noOfSeats
+        self.fuelType = fuelType
+        self.baseRatePerDay = baseRatePerDay
+        self.basePerKm = basePerKm
+    
+    }
     
 
 }
