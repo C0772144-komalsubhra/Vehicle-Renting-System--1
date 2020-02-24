@@ -40,4 +40,12 @@ do{
     v2.addVehicle(vehicle: b2, vinNumber: "ACVG3")
     c1.addVehicle(vehicle: v2, vehicleRentId: 02)
     v3.addVehicle(vehicle: mc1, vinNumber: mc1.vehicleIdentificationNumber)
+    c.addVehicle(vehicle: v3, vehicleRentId: v3.vehicleRentId)
+      c1.display()
+    //v1.display()
+    v4.addVehicle(vehicle: ca1, vinNumber: ca1.vehicleIdentificationNumber)
+    c.addVehicle(vehicle: v4, vehicleRentId: v4.vehicleRentId)
+    c.display()
+    //print(c1.customerAge)
+    
 }
