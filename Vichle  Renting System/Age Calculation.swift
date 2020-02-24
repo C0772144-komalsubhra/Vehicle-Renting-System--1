@@ -22,7 +22,12 @@ static func calculateAge(birthDate:String)->String//https://stackoverflow.com/qu
        {
            let c=stringToDate(string:birthDate)
            let form = DateComponentsFormatter()
-         
+           form.maximumUnitCount = 2
+           form.unitsStyle = .full
+           form.allowedUnits = [.year, .month, .day]
+           guard let s = form.string(from: c, to: Date()) else{return ""}
+           return s
+           
            
        }
      
