@@ -13,5 +13,8 @@ do{
     var d2=try Driver(id: 2, firstName: "mandeep", lastName: "khan", gender:.FEMALE, birthDate: "22/10/1992",address:"31 gorewood ave",city:"Brampton", mobileNumber: 6598765676, emailId: "ayesh123@yahoo.com", userName:"ayesha123",
            password:"ak8973",drivingLicenseNumber:"DRI28VB",isDrivingHistoryCleared:true,salary:750)
     
-   
-}
+    let v1 = VehicleRent(vehicleRentId:01,rentStartDate: "22/07/2019", rentEndDate: "22/08/2019", kmDrived: 500)
+    
+    
+    let v2 = VehicleRent(vehicleRentId: 02, rentStartDate: "03/02/2020", rentEndDate: "23/02/2020", kmDrived:30)
+    
