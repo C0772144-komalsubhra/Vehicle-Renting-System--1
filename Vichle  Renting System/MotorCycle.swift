@@ -17,6 +17,14 @@ class MotorCycle: Vehicle {
     
     var vehicleDiscription: String
     
+    var manufacturerName: String
+    
+    var isSelfDrive: Bool
+    
+    var driverName: String?
+    
+    var isInsured: Bool
+    
   
 
 }
