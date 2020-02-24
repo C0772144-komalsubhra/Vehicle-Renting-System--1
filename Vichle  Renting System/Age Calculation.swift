@@ -20,7 +20,9 @@ public class AgeCalculation{
     
 static func calculateAge(birthDate:String)->String//https://stackoverflow.com/questions/33780184/calculate-duration-between-date-ios-in-years-months-and-date-format
        {
-          
+           let c=stringToDate(string:birthDate)
+           let form = DateComponentsFormatter()
+         
            
        }
      
