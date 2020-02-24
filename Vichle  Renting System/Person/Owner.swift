@@ -69,21 +69,5 @@ class Owner: Person{
        
     }
     
-    func display() {
-               print("************* OWNER DETAILS **************")
-               print("Owner ID : \(self.id)")
-               print("Owner Full Name: \(self.firstName)" ,"\(self.lastName)")
-               print("Gender :\(self.gender)")
-                print("Birth Date :\(self.birthDate)")
-        print("Age:  \(String(describing: self.age))")
-               print("Mobile Number :\(self.mobileNumber)")
-               print("Company Titles :\(self.companyTitle)")
-               print("Business Landline Number : \(self.businessLandLineNumber)")
-               print("Website : \(self.website)")
-               print("Address :\(self.address)")
-               print("City :\(self.city)")
-               print("EmailID :\(String(describing: self.emailId))")
-               print("UserName :\(self.userName)")
-               print("Password :\(String(describing: self.password))")
-    }
+   
     }
