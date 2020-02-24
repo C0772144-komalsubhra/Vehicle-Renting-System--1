@@ -64,6 +64,24 @@ class Driver: Person {
         
     }
         
-   
+    func display(){
+            print("**************DRIVER DETAILS***************")
+            print("Driver ID : \(self.id)")
+            print("Driver Full Name: \(self.firstName)" ,"\(self.lastName)")
+            print("Gender :\(self.gender)")
+            print("Birth Date :\(self.birthDate)")
+            print("Age:  \(String(describing: self.age))")
+            print("Mobile Number :\(self.mobileNumber)")
+            print("Address :\(self.address)")
+            print("City :\(self.city)")
+            print("EmailID :\(String(describing: self.emailId))")
+            print("UserName :\(userName)")
+            print("Password :\(String(describing: self.password))")
+            print("Driving License Number : \(self.drivingLicenseNumber)")
+            print("Is Driving History Cleared ? : \(self.isDrivingHistoryCleared)")
+        print("Salary : \(self.salary.currency())")
+        
+    }
+    
     
 }
