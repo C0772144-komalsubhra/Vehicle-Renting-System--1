@@ -24,4 +24,9 @@ do{
     
     
      let b2=Bus(vehicleIdentificationNumber :"ACVG3",vehicleDiscription :"Mini BUS",manufacturerName :"honda",vehicleType:.BUS,isSelfDrive : false,driverName:"mohsin khan",isInsured:true,insauranceProviderName : "tata ltd",noOfSeats: 14,fuelType: .DIESEL,baseRatePerDay:15,basePerKm:8,isAccessibilityServiceAvailable: true,isWifiAvailable: true)
- 
+    let ca1=Car(vehicleIdentificationNumber :"CAR01",vehicleDiscription :"LONG AND COMFORTABLE",manufacturerName :"MERCEDES",vehicleType:.CAR,carColor:"RED",isSelfDrive : false,driverName:"mandeep khan",isInsured:false,insauranceProviderName : nil,noOfSeats: 6,fuelType: .PETROL,baseRatePerDay:20,basePerKm:5) 
+    
+    let c = try Customers(id: 1, firstName: "Manbeer", lastName: "kaur", gender: .FEMALE, birthDate: "02/02/2020",  address: "32 Amberley Drive", city: "toronto", mobileNumber: 6476854431, emailId: "manbeergill545@gmail.com", userName: "manbeer0", password: "ZcVdGh")
+    //c.display()
+    
+    
