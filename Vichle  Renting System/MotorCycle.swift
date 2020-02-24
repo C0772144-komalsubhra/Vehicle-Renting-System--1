@@ -25,6 +25,19 @@ class MotorCycle: Vehicle {
     
     var isInsured: Bool
     
-  
+    var insauranceProviderName: String?
+    
+    var noOfSeats: Int
+    
+    var baseRatePerDay: Int
+    
+    var basePerKm: Int
+    var milage:Int
+    
+    var maxTopSpeed: Int
+     var driver = [Int: Driver]()
+    
+   
+    
 
 }
