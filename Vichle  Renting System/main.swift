@@ -35,6 +35,9 @@ do{
   
     ca1.addDriver(driverId: d1.id, driverObj: d1)
     b2.addDriver(driverId: d2.id,driverObj: d2)
-    
-    
+    v1.addVehicle(vehicle: b1, vinNumber: b1.vehicleIdentificationNumber)
+     c1.addVehicle(vehicle: v1, vehicleRentId: 01)
+    v2.addVehicle(vehicle: b2, vinNumber: "ACVG3")
+    c1.addVehicle(vehicle: v2, vehicleRentId: 02)
+    v3.addVehicle(vehicle: mc1, vinNumber: mc1.vehicleIdentificationNumber)
 }
