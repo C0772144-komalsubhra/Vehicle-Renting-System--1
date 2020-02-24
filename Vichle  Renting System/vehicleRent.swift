@@ -25,7 +25,16 @@ init(vehicleRentId:Int,rentStartDate: String,rentEndDate: String ,kmDrived:Int)
             self.kmDrived = kmDrived
             self.noOfDays = calculateTotalDays(startDate: rentStartDate, endDate: rentEndDate)
             }
-   
+    func addVehicle(vehicle: Vehicle, vinNumber: String)
+    {
+        vehicles.updateValue(vehicle, forKey: vinNumber)
+    }
+    
+    func removeVehicle(vinNumber: String)
+    {
+        vehicles.removeValue(forKey: vinNumber)
+    }
+  
     }
 
     
