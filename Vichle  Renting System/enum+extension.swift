@@ -19,50 +19,7 @@ extension String{
         return emailTest.evaluate(with: email)
         }
     
-    func dateSet(input:String)->String
-    {
-    let formatter = DateFormatter()
-    formatter.dateFormat = "MM/dd/yyyy"
-    if let date = formatter.date(from: input) {
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.dateStyle = .long
-        return(formatter.string(from: date))
-        }
-        return "Incorrect Date"
-    }
-    
-   
-    
-
-}
-extension Int{
-    
-   func isMobileNumberValid(mobile:Int) -> Bool{
-    return true/*//https://stackoverflow.com/questions/27998409/email-phone-validation-in-swift
-    let mobileNumberRegEx = "[0-9]{10}"
-    let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
-    return mobileTest.evaluate(with: mobile)*/
-    }
-    func currency() -> String
-           {
-               return "$\(self)"
-           }
-    func speed()->String
-    {
-        return "\(self)km\\hr"
-    }
-}
-    extension Double{
-        func currency() -> String
-        {
-            return "$\(self)"
-        }
-    }
-extension Float{
-       func currency() -> String
-       {
-           return "$\(self)"
-       }
+  
    }
 
 
