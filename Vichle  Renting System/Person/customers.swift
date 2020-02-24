@@ -77,36 +77,6 @@ class Customers:Person{
            objVehicle.updateValue(vehicle, forKey: vehicleRentId)
        }
        
-       func removeVehicle(vehicleRentId: Int)
-       {
-           objVehicle.removeValue(forKey: vehicleRentId)
-       }
-    
-   
-    
-    func display() {
-        print("************* CUSTOMER DETAILS **************")
-        print("Customer ID : \(self.id)")
-        print("Customer Full Name: \(self.fullName)")
-        print("Gender :\(self.gender)")
-         print("Birth Date :\(self.birthDate)")
-        print("Age:  \(String(describing: self.age))")
-        print("Mobile Number :\(self.mobileNumber)")
-        print("Address :\(self.address)")
-        print("City :\(self.city)")
-        print("EmailID :\(String(describing: self.emailId))")
-        print("UserName :\(self.userName)")
-        print("Password :\(String(describing: self.password))")
-        print("     ------VEHICLE RENTED BY THE CUSTOMER------        ")
-                       print("*******************************************")
-        if objVehicle.count == 0{
-            print("NO VEHICLE RENTED")
-        }
-        else{
-        for i in objVehicle{
-            i.value.display()
-            }}
-        
-    }
+     
     
 }
