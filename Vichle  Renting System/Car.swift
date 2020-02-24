@@ -38,7 +38,28 @@ class Car:Vehicle{
     var carColor: String
     var driver = [Int: Driver]()
     
+    init(vehicleIdentificationNumber :String,vehicleDiscription :String,manufacturerName :String,vehicleType:VehicleTypes,carColor:String,isSelfDrive : Bool,driverName:String,isInsured:Bool,insauranceProviderName : String?,noOfSeats: Int,fuelType: typesOfFuel,baseRatePerDay:Int,basePerKm:Int)
+    {
+        self.vehicleIdentificationNumber = vehicleIdentificationNumber
+        self.vehicleDiscription = vehicleDiscription
+        self.vehicleType = vehicleType
+        self.manufacturerName = manufacturerName
+        self.isSelfDrive = isSelfDrive
+        self.driverName = driverName
+        self.isInsured = isInsured
+        self.insauranceProviderName = insauranceProviderName
+        self.noOfSeats = noOfSeats
+        self.fuelType = fuelType
+        self.baseRatePerDay = baseRatePerDay
+        self.basePerKm = basePerKm
+       self.carColor = carColor
+    }
     
+    func addDriver(driverId: Int, driverObj: Driver)
+       {
+           driver.updateValue(driverObj, forKey: driverId)
+       }
+  
     
 
 }
