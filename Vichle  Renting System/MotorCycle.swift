@@ -65,4 +65,24 @@ class MotorCycle: Vehicle {
         driver.removeValue(forKey: driverId)
     }
     
+    func display() {
+        print("_____________MotorCycle Details________________")
+        print("Vehicle Identification Number : \(self.vehicleIdentificationNumber)")
+        print("Vehicle Disctription : \(self.vehicleDiscription)")
+        print("Vehicle Type : \(self.vehicleType)")
+        print("Manufacturer Name :\(self.manufacturerName) ")
+        print("Milage :\(self.milage.speed())")
+        print("Maximum Top Speed :\(self.maxTopSpeed.speed())")
+        print("Is Self Drive :\(self.isSelfDrive)")
+        print("Driver Name :\(String(describing: self.driverName)) ")
+        print("Is Insured :\(self.isInsured)")
+        print("Insaurance Provider Name :\(String(describing: self.insauranceProviderName))")
+        print("No Of Seats :\(self.noOfSeats)")
+        print("Fuel Type :\(self.fuelType)")
+        print("Base Rate Per Day :\(self.baseRatePerDay.currency())")
+        print("Base Per KM :\(self.basePerKm.currency())" )
+        
+            print("*******************************************************")
+      
+
 }
