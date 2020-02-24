@@ -20,4 +20,8 @@ do{
      let v3 = VehicleRent(vehicleRentId: 03, rentStartDate: "03/01/2020", rentEndDate: "23/02/2020", kmDrived:30)
      let v4 = VehicleRent(vehicleRentId: 04, rentStartDate: "03/01/2020", rentEndDate: "23/02/2020", kmDrived:20)
     
-   
+    let b1=Bus(vehicleIdentificationNumber :"ACVG54",vehicleDiscription :"FABRICATED HIGH QUALITY",manufacturerName :"VOLVO",vehicleType:.BUS,isSelfDrive : true,driverName:nil,isInsured:false,insauranceProviderName : nil,noOfSeats: 30,fuelType: .DIESEL,baseRatePerDay:25,basePerKm:8,isAccessibilityServiceAvailable: true,isWifiAvailable: true)
+    
+    
+     let b2=Bus(vehicleIdentificationNumber :"ACVG3",vehicleDiscription :"Mini BUS",manufacturerName :"honda",vehicleType:.BUS,isSelfDrive : false,driverName:"mohsin khan",isInsured:true,insauranceProviderName : "tata ltd",noOfSeats: 14,fuelType: .DIESEL,baseRatePerDay:15,basePerKm:8,isAccessibilityServiceAvailable: true,isWifiAvailable: true)
+ 
