@@ -17,7 +17,15 @@ class VehicleRent:DisplayDelegate{
     var noOfDays:Int=0
   
 
-
+init(vehicleRentId:Int,rentStartDate: String,rentEndDate: String ,kmDrived:Int)
+        {
+            self.vehicleRentId=vehicleRentId
+            self.rentStartDate = rentStartDate
+            self.rentEndDate = rentEndDate
+            self.kmDrived = kmDrived
+            self.noOfDays = calculateTotalDays(startDate: rentStartDate, endDate: rentEndDate)
+            }
+   
     }
 
     
