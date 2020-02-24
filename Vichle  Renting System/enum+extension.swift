@@ -58,7 +58,11 @@ extension Int{
             return "$\(self)"
         }
     }
-
+extension Float{
+       func currency() -> String
+       {
+           return "$\(self)"
+       }
    }
 
 
