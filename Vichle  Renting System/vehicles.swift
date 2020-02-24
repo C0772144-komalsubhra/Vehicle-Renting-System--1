@@ -10,8 +10,10 @@ import Foundation
 enum  VehicleTypes {
     case BUS,CAR,MOTORCYCLE
 }
+enum typesOfFuel {
+    case DIESEL,PETROL
+}
 
-    
     
 }
 
