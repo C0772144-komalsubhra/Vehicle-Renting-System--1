@@ -34,7 +34,18 @@ init(vehicleRentId:Int,rentStartDate: String,rentEndDate: String ,kmDrived:Int)
     {
         vehicles.removeValue(forKey: vinNumber)
     }
-  
+    //func calculateTotalBill(RentPerDay:Int,RentPerKm:Int,kmDrived:Int,noOfDays:Int)
+    //{
+     //   self.totalBill = Float((RentPerDay*noOfDays)+(RentPerKm*kmDrived))
+    //    print(self.totalBill)
+   // }
+    func calculateTotalDays(startDate:String,endDate:String)->Int{
+        let d1=AgeCalculation.stringToDate(string: startDate)
+         let d2=AgeCalculation.stringToDate(string: endDate)
+        let current = Calendar.current
+        let numberOfDays = current.dateComponents([Calendar.Component.day], from: d1, to: d2)
+        return numberOfDays.day!
+    }
     }
 
     
