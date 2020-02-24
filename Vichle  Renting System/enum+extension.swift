@@ -47,7 +47,18 @@ extension Int{
            {
                return "$\(self)"
            }
-   
+    func speed()->String
+    {
+        return "\(self)km\\hr"
+    }
+}
+    extension Double{
+        func currency() -> String
+        {
+            return "$\(self)"
+        }
+    }
+
    }
 
 
